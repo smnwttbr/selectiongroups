@@ -1,15 +1,17 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+[assembly: InternalsVisibleTo("Unity.GoQL.Editor")]
 
 namespace Unity.GoQL
 {
     /// <summary>
     /// This class is responsible for taking GoQL source code and evaluating it.
     /// </summary>
-    public partial class GoQLExecutor
+    internal partial class GoQLExecutor
     {
         readonly Stack<object> stack = new Stack<object>();
         readonly DoubleBuffer<GameObject> selection = new DoubleBuffer<GameObject>();
