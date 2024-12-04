@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 * internalized class GoQLExecutor and tests that do not belong in the public API
+* internalized editor drawer classes.
 
 ## [0.9.3-preview] - 2023-07-18
 
