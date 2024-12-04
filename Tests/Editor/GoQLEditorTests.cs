@@ -7,7 +7,7 @@ using UnityEngine.TestTools;
 
 namespace Tests
 {
-    public class GoQLEditorTests
+    internal class GoQLEditorTests
     {
         [UnityTest]
         public IEnumerator UndoGoQLQuery()

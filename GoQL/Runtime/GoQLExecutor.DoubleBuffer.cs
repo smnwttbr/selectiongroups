@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Unity.GoQL
 {
-    public partial class GoQLExecutor
+    internal partial class GoQLExecutor
     {
         class DoubleBuffer<T> : IEnumerable<T>
         {
