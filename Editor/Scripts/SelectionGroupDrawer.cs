@@ -10,7 +10,7 @@ namespace Unity.SelectionGroups.Editor
     /// The editor draw used in the inspector for SelectionGroup properties.
     /// </summary>
     [CustomPropertyDrawer(typeof(SelectionGroupDropDownAttribute))]
-    public class SelectionGroupDrawer : PropertyDrawer
+    internal class SelectionGroupDrawer : PropertyDrawer
     {
         string[] names;
 
