@@ -13,6 +13,21 @@ namespace Unity.SelectionGroups
     /// <summary>
     /// A component to group a number of GameObjects under a common name.
     /// </summary>
+    /// <remarks>
+    /// The SelectionGroup component manages a list of GameObjects that are part of the group. It is created and managed using the Selection Group window.
+    /// The members of a SelectionGroup are created manually in the editor by adding GameObjects to the group, or automatically by using a GoQL query string. If a GoQL query string is used, the group will automatically include GameObjects from the hierarchy that match the query. The <see cref="IsAutoFilled"/> method can be used to determine if the group is automatically filled.
+    ///
+    /// If you want to iterate over the GameObjects in the group, you can use the <see cref="Members"/> property. You can also access members by index
+    /// using array syntax. For example, <c>group[0]</c> returns the first GameObject in the group. The <see cref="Count"/> property will return the number of GameObjects in the group.
+    /// </remarks>
+    /// <example>
+    ///     This is how you can access the members of a SelectionGroup:
+    ///     <code lang="cs"><![CDATA[
+    ///         foreach(var member in selectionGroup.Members) {
+    ///             // Do something with member
+    ///         }
+    ///     ]]></code>
+    /// </example>
     [ExecuteAlways]
     [AddComponentMenu("")]
     public class SelectionGroup : MonoBehaviour, IList<GameObject>, ISerializationCallbackReceiver    
