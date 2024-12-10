@@ -4,11 +4,13 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [0.10.0-preview] - 2024-12-09
+## [0.10.0-preview] - 2024-12-10
 
 ### Changed
-* internalized class GoQLExecutor and tests that do not belong in the public API
-* internalized editor drawer classes.
+* package: set minimum Unity version to 2021.3
+* api: internalized class GoQLExecutor and tests that do not belong in the public API
+* api: internalized editor drawer classes
+* deps: use com.unity.film-internal-utilities@0.19.2-preview
 
 ## [0.9.3-preview] - 2023-07-18
 
